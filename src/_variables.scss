@@ -16,7 +16,7 @@ $green:              #548C27;
 $purple:             #b366ff;
 $orange:             #f39856;
 
-$navLink:            $white;
+$navLink:            $white;  //use of variables
 $link:              rgb(0, 0, 255);
 $hoverLink:          $wvYellow;
 $activeLink:         $purple;
@@ -27,4 +27,4 @@ $font-headings: Oswald, roboto, sans-serif; //example of list in sass
 //  colors for media
 $color-item-border: $dark-gray;
 $color-media-head: $blue;
-$color-even-cells:  transparentize($yellow, .7); //alternate row colors for table
+$color-even-cells:  transparentize($yellow, .7); //alternate row colors for table using color modifier

@@ -50,3 +50,18 @@
         }
     }    
 }
+
+//This mixin will set the background color and color for the grid by using flow control statements of if/else
+@mixin gridTheme($team: none){
+    @if $team == varsity{
+        background-color: $dark-gray;
+        }@else if $team == jv{
+        background-color: $red;
+            }@else if $team == frosh {
+        background-color: $blue;
+            }@else if $team == trainees{
+        background-color: $purple;
+            }@else{
+        background-color: $blue2;
+       }
+}

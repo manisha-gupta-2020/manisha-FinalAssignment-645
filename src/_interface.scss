@@ -15,7 +15,7 @@ $roundness: 10px 0 10px 0;
 
 // using maps(key-value pairs) and flow content(@each) to create classes for .btn-color
 $color-btns: (
-    varsity: $text-color,
+    varsity: $dark-gray,
     junior: $red,
     frosh: $blue,
     trainees: $purple
@@ -29,8 +29,8 @@ $color-btns: (
 
 //image grid using mixin
 .grid{
-    margin-bottom: 15px;
-    @include clearfix; //use of custom mixin
+    margin: 1em 0;
+     @include clearfix; //use of custom mixin
     .item{
         float: left;
         //on small screen 2col grid, med screen 3col grid, large screen 5col grid
