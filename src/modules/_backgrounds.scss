@@ -1,23 +1,29 @@
-.background{
-    color: $background;
+.jText{
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 1rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-       > h1{
+       > h2,p{
             color: $wvYellow;
             font-family: $font-headings;
             font-size: 3rem;
         }
+        >p{
+            display: none;
+            @include break(720px){
+                display: block;
+            }
+        }
+
 }
 .jumbotron{
-    margin-top: 0;
-    @include backImage("../images/team-sm.jpg");
+    @include backImage("../images/team-sm.jpg",250px);
     @include break(500px){ 
-        @include backImage("../images/team-md.jpg");
+        @include backImage("../images/team-md.jpg",300px);
       }
     @include break(720px){ 
-        @include backImage("../images/team-lg.jpg");
+        @include backImage("../images/team-lg.jpg",400px);
     }
 }
